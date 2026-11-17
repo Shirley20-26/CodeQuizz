@@ -2,3 +2,8 @@
 08/11/2026 - FASE 1 COMPLETA: main.py abre ventana con "Hola, soy CodeQuizz!"
 08/11/2026 - Se crearon carpetas app, data, kv, documento
 08/11/2026 - FASE 2 COMPLETA:CodeQuizz abre con pantalla de inicio, quiz y resultado
+14/11/2026 - FASE 3 COMPLETA: Se arreglo error en resultado.py y quiz.py que botaba al dar Ver resultados
+16/11/2026 - Prueba modo invitado: Se completo nivel Escuela y salio Nivel Superado con racha de 5
+16/11/2026 - Prueba de botones resultado: Siguiente nivel, Jugar otra vez y volver  funcionan sin error
+16/11/206 - Prueba de persistencia: Al cerrar y volver abrir, puntos y medallas quedan intactos en menu
+16/11/2026 - Prueba de edad: con fecha 2015 entra a Fase Escuela correctamente
