@@ -1,0 +1,93 @@
+#:import hex kivy.utils.get_color_from_hex
+
+<PantallaQuiz>:
+    name: 'quiz'
+    canvas.before:
+        Color:
+            rgba: root.color_fondo
+        Rectangle:
+            pos: self.pos
+            size: self.size
+
+    BoxLayout:
+        orientation: 'vertical'
+        padding: dp(18)
+        spacing: dp(8)
+
+        # Barra superior: progreso, puntos y racha
+        BoxLayout:
+            size_hint_y: None
+            height: dp(32)
+            Label:
+                text: root.texto_progreso
+                text_size: self.size
+                halign: 'left'
+                valign: 'middle'
+                color: hex('#E0E7FF')
+            Label:
+                text: 'Puntos: ' + str(root.puntos) + '   Racha: ' + str(root.racha)
+                text_size: self.size
+                halign: 'right'
+                valign: 'middle'
+                color: hex('#FACC15')
+
+        # Dibujito de la pregunta (solo aparece si la pregunta tiene imagen)
+        Image:
+            source: root.imagen
+            size_hint_y: None
+            height: dp(80) if root.imagen else 0
+            opacity: 1 if root.imagen else 0
+
+        # La pregunta
+        Label:
+            text: root.pregunta_texto
+            font_size: sp(root.tam_pregunta)
+            bold: True
+            text_size: self.size
+            halign: 'center'
+            valign: 'middle'
+
+        BotonOpcion:
+            id: op0
+            height: dp(root.alto_opcion)
+            font_size: sp(root.tam_opcion)
+            on_release: root.responder(0)
+        BotonOpcion:
+            id: op1
+            height: dp(root.alto_opcion)
+            font_size: sp(root.tam_opcion)
+            on_release: root.responder(1)
+        BotonOpcion:
+            id: op2
+            height: dp(root.alto_opcion)
+            font_size: sp(root.tam_opcion)
+            on_release: root.responder(2)
+        BotonOpcion:
+            id: op3
+            height: dp(root.alto_opcion)
+            font_size: sp(root.tam_opcion)
+            on_release: root.responder(3)
+
+        # Explicación después de responder
+        Label:
+            text: root.mensaje
+            markup: True
+            font_size: sp(14)
+            color: hex('#E0E7FF')
+            text_size: self.size
+            halign: 'center'
+            valign: 'middle'
+            size_hint_y: None
+            height: dp(96)
+
+        BotonPrincipal:
+            id: btn_siguiente
+            text: 'Siguiente'
+            opacity: 0
+            disabled: True
+            on_release: root.siguiente()
+
+        BotonSecundario:
+            text: 'Salir'
+            height: dp(40)
+            on_release: root.salir()

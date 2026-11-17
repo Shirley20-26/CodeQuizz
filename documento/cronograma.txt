@@ -1,0 +1,4 @@
+08/11/2026 - se instalo kivy 2.3.2 con python 3.10.5
+08/11/2026 - FASE 1 COMPLETA: main.py abre ventana con "Hola, soy CodeQuizz!"
+08/11/2026 - Se crearon carpetas app, data, kv, documento
+08/11/2026 - FASE 2 COMPLETA:CodeQuizz abre con pantalla de inicio, quiz y resultado

@@ -1,0 +1,52 @@
+#:import hex kivy.utils.get_color_from_hex
+
+<PantallaInicio>:
+    name: 'inicio'
+    canvas.before:
+        Color:
+            rgba: hex('#1E1B4B')
+        Rectangle:
+            pos: self.pos
+            size: self.size
+
+    BoxLayout:
+        orientation: 'vertical'
+        padding: dp(28)
+        spacing: dp(14)
+
+        Widget:
+            size_hint_y: 0.15
+
+        Label:
+            text: '[b]Code[color=#FACC15]Quiz[/color][/b]'
+            markup: True
+            font_size: sp(48)
+
+        Label:
+            text: 'Aprende informática jugando'
+            font_size: sp(18)
+            color: hex('#C7D2FE')
+            size_hint_y: None
+            height: dp(40)
+
+        Widget:
+            size_hint_y: 0.2
+
+        BotonPrincipal:
+            text: 'Jugar como invitado'
+            on_release: root.jugar_como_invitado()
+
+        BotonSecundario:
+            text: 'Ya tengo cuenta'
+            on_release: root.ir_a_login()
+
+        Label:
+            id: lbl_aviso
+            text: ''
+            font_size: sp(14)
+            color: hex('#FDE68A')
+            size_hint_y: None
+            height: dp(30)
+
+        Widget:
+            size_hint_y: 0.1

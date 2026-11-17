@@ -1,0 +1,38 @@
+#:import hex kivy.utils.get_color_from_hex
+
+<PantallaNiveles>:
+    name: 'niveles'
+    canvas.before:
+        Color:
+            rgba: root.color_fondo
+        Rectangle:
+            pos: self.pos
+            size: self.size
+
+    BoxLayout:
+        orientation: 'vertical'
+        padding: dp(20)
+        spacing: dp(10)
+
+        Label:
+            text: '[b]' + root.titulo + '[/b]'
+            markup: True
+            font_size: sp(26)
+            color: hex('#FACC15')
+            text_size: self.width, None
+            halign: 'center'
+            size_hint_y: None
+            height: dp(60)
+
+        ScrollView:
+            BoxLayout:
+                id: contenedor
+                orientation: 'vertical'
+                size_hint_y: None
+                height: self.minimum_height
+                spacing: dp(12)
+
+        BotonSecundario:
+            text: 'Volver'
+            height: dp(42)
+            on_release: root.volver()

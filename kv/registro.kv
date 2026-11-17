@@ -1,0 +1,91 @@
+#:import hex kivy.utils.get_color_from_hex
+
+<PantallaRegistro>:
+    name: 'registro'
+    canvas.before:
+        Color:
+            rgba: hex('#1E1B4B')
+        Rectangle:
+            pos: self.pos
+            size: self.size
+
+    BoxLayout:
+        orientation: 'vertical'
+        padding: dp(20)
+        spacing: dp(8)
+
+        Label:
+            text: '[b]Crea tu cuenta[/b]'
+            markup: True
+            font_size: sp(28)
+            color: hex('#FACC15')
+            size_hint_y: None
+            height: dp(50)
+
+        ScrollView:
+            BoxLayout:
+                orientation: 'vertical'
+                size_hint_y: None
+                height: self.minimum_height
+                spacing: dp(10)
+
+                CampoTexto:
+                    id: in_usuario
+                    hint_text: 'Nombre de usuario'
+                CampoTexto:
+                    id: in_correo
+                    hint_text: 'Correo (Gmail, Hotmail, otro)'
+                    input_type: 'mail'
+
+                Label:
+                    text: 'Fecha de nacimiento'
+                    color: hex('#C7D2FE')
+                    font_size: sp(14)
+                    text_size: self.size
+                    halign: 'left'
+                    valign: 'bottom'
+                    size_hint_y: None
+                    height: dp(24)
+
+                BoxLayout:
+                    size_hint_y: None
+                    height: dp(46)
+                    spacing: dp(8)
+                    CampoTexto:
+                        id: in_dia
+                        hint_text: 'Día'
+                        input_filter: 'int'
+                        input_type: 'number'
+                    CampoTexto:
+                        id: in_mes
+                        hint_text: 'Mes'
+                        input_filter: 'int'
+                        input_type: 'number'
+                    CampoTexto:
+                        id: in_anio
+                        hint_text: 'Año'
+                        input_filter: 'int'
+                        input_type: 'number'
+                        size_hint_x: 1.5
+
+                CampoTexto:
+                    id: in_clave
+                    hint_text: 'Contraseña (mín. 8, letras y números)'
+                    password: True
+                CampoTexto:
+                    id: in_clave2
+                    hint_text: 'Repite la contraseña'
+                    password: True
+
+        EtiquetaError:
+            id: lbl_error
+            text: ''
+
+        BotonPrincipal:
+            text: 'Crear cuenta'
+            on_release: root.crear_cuenta()
+
+        BotonSecundario:
+            text: 'Volver'
+            height: dp(42)
+            on_release: root.volver()

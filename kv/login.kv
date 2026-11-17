@@ -1,0 +1,61 @@
+#:import hex kivy.utils.get_color_from_hex
+
+<PantallaLogin>:
+    name: 'login'
+    canvas.before:
+        Color:
+            rgba: hex('#1E1B4B')
+        Rectangle:
+            pos: self.pos
+            size: self.size
+
+    BoxLayout:
+        orientation: 'vertical'
+        padding: dp(24)
+        spacing: dp(12)
+
+        Widget:
+            size_hint_y: 0.1
+
+        Label:
+            text: '[b]Iniciar sesión[/b]'
+            markup: True
+            font_size: sp(28)
+            color: hex('#FACC15')
+            size_hint_y: None
+            height: dp(60)
+
+        CampoTexto:
+            id: in_usuario
+            hint_text: 'Usuario o correo'
+
+        CampoTexto:
+            id: in_clave
+            hint_text: 'Contraseña'
+            password: True
+
+        EtiquetaError:
+            id: lbl_error
+            text: ''
+
+        BotonPrincipal:
+            text: 'Entrar'
+            on_release: root.entrar()
+
+        BotonSecundario:
+            text: 'Olvidé mi contraseña'
+            height: dp(42)
+            on_release: root.ir_a_recuperar()
+
+        BotonSecundario:
+            text: 'Crear una cuenta'
+            height: dp(42)
+            on_release: root.ir_a_registro()
+
+        BotonSecundario:
+            text: 'Volver'
+            height: dp(42)
+            on_release: root.volver()
+
+        Widget:
+            size_hint_y: 0.1

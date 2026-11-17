@@ -1,0 +1,62 @@
+#:import hex kivy.utils.get_color_from_hex
+
+<PantallaRecuperar>:
+    name: 'recuperar'
+    canvas.before:
+        Color:
+            rgba: hex('#1E1B4B')
+        Rectangle:
+            pos: self.pos
+            size: self.size
+
+    BoxLayout:
+        orientation: 'vertical'
+        padding: dp(24)
+        spacing: dp(10)
+
+        Label:
+            text: '[b]Recuperar contraseña[/b]'
+            markup: True
+            font_size: sp(26)
+            color: hex('#FACC15')
+            size_hint_y: None
+            height: dp(50)
+
+        Label:
+            text: 'Usa el código de recuperación que recibiste al registrarte.'
+            font_size: sp(14)
+            color: hex('#C7D2FE')
+            text_size: self.width, None
+            halign: 'center'
+            size_hint_y: None
+            height: dp(40)
+
+        CampoTexto:
+            id: in_usuario
+            hint_text: 'Nombre de usuario'
+        CampoTexto:
+            id: in_codigo
+            hint_text: 'Código (ABCD-EFGH-JKLM)'
+        CampoTexto:
+            id: in_clave
+            hint_text: 'Nueva contraseña'
+            password: True
+        CampoTexto:
+            id: in_clave2
+            hint_text: 'Repite la nueva contraseña'
+            password: True
+
+        EtiquetaError:
+            id: lbl_error
+            text: ''
+
+        BotonPrincipal:
+            text: 'Cambiar contraseña'
+            on_release: root.cambiar()
+
+        BotonSecundario:
+            text: 'Volver'
+            height: dp(42)
+            on_release: root.volver()
+
+        Widget:

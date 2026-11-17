@@ -1,0 +1,65 @@
+#:import hex kivy.utils.get_color_from_hex
+
+# Botón principal (amarillo)
+<BotonPrincipal@Button>:
+    background_normal: ''
+    background_color: hex('#FACC15')
+    color: hex('#1E1B4B')
+    bold: True
+    font_size: sp(18)
+    size_hint_y: None
+    height: dp(54)
+
+# Botón secundario (morado)
+<BotonSecundario@Button>:
+    background_normal: ''
+    background_color: hex('#4338CA')
+    color: 1, 1, 1, 1
+    font_size: sp(16)
+    size_hint_y: None
+    height: dp(50)
+
+# Botón de respuesta del quiz
+<BotonOpcion@Button>:
+    background_normal: ''
+    background_color: hex('#4338CA')
+    color: 1, 1, 1, 1
+    font_size: sp(16)
+    size_hint_y: None
+    height: dp(58)
+    text_size: self.width - dp(16), None
+    halign: 'center'
+
+    # Campo de texto
+<CampoTexto@TextInput>:
+    multiline: False
+    size_hint_y: None
+    height: dp(46)
+    font_size: sp(16)
+    padding: [dp(12), dp(12), dp(12), dp(8)]
+    background_normal: ''
+    background_active: ''
+    background_color: 1, 1, 1, 1
+    foreground_color: 0.1, 0.1, 0.2, 1
+    hint_text_color: 0.5, 0.5, 0.6, 1
+    cursor_color: 0.26, 0.22, 0.79, 1
+
+# Texto de error (rojo suave)
+<EtiquetaError@Label>:
+    color: 1, 0.62, 0.62, 1
+    font_size: sp(14)
+    text_size: self.width, None
+    halign: 'center'
+    size_hint_y: None
+    height: dp(44)
+
+# Medalla redonda (la usan la pantalla de niveles y la de resultado)
+<MedallaIcono>:
+    size_hint: None, None
+    size: dp(44), dp(44)
+    canvas:
+        Color:
+            rgba: self.color
+        Ellipse:
+            pos: self.pos
+            size: self.size

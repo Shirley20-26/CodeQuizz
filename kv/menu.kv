@@ -1,0 +1,49 @@
+#:import hex kivy.utils.get_color_from_hex
+
+<PantallaMenu>:
+    name: 'menu'
+    canvas.before:
+        Color:
+            rgba: root.color_fondo
+        Rectangle:
+            pos: self.pos
+            size: self.size
+
+    BoxLayout:
+        orientation: 'vertical'
+        padding: dp(28)
+        spacing: dp(14)
+
+        Widget:
+            size_hint_y: 0.1
+
+        Label:
+            text: root.saludo
+            font_size: sp(30)
+            bold: True
+            color: hex('#FACC15')
+
+        Label:
+            text: root.etapa
+            font_size: sp(18)
+            color: hex('#E0E7FF')
+            size_hint_y: None
+            height: dp(30)
+
+        Label:
+            text: root.resumen
+            font_size: sp(20)
+            bold: True
+            size_hint_y: None
+            height: dp(40)
+
+        BotonPrincipal:
+            text: 'Jugar'
+            on_release: root.jugar()
+
+        BotonSecundario:
+            text: 'Cerrar sesión'
+            on_release: root.cerrar_sesion()
+
+        Widget:
+            size_hint_y: 0.15
