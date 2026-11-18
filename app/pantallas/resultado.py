@@ -39,8 +39,14 @@ class PantallaResultado(Screen):
         self.manager.current = "registro"
 
     def jugar_otra_vez(self):
-        self.manager.get_screen("quiz").iniciar_nivel(1)
+        quiz = self.manager.get_screen("quiz")
+        segmento = getattr(quiz, "segmento_actual", None) or getattr(quiz, "segmento", None) or getattr(quiz, "segmento_actual", None)or "colegio"
+        tema = getattr(quiz, "tema_actual", None) or getattr (quiz, "tema", None) or getattr(quiz, "tema_actual", None)or "colegio"       
+        nivel = getattr(quiz, "nivel_actual", None)or getattr(quiz, "nivel", None) or getattr(quiz, "nivel_actual",1)or 1
+        quiz.iniciar_nivel(tema, nivel)
         self.manager.current = "quiz"
-
-    def volver(self):
-        self.manager.current = "menu" if auth.usuario_actual() else "inicio"
+        try:
+            quiz.iniciar_nivel(segmento, tema, nivel)
+        except TypeError:
+            quiz.iniciar_nivel(tema,nivel)
+        self.manager.current = "quiz"

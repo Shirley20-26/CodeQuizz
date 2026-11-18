@@ -1,90 +1,1294 @@
 {
   "preguntas": [
-    {"id": 1, "fase": "invitado", "tema": "demo", "nivel": 1, "pregunta": "¿Qué significan las siglas CPU?", "opciones": ["Control Principal de Usuario", "Centro de Programas Universales", "Computadora Personal Unida", "Unidad Central de Procesamiento"], "correcta": 3, "explicacion": "La CPU es el 'cerebro' de la computadora: ejecuta las instrucciones de los programas."},
-    {"id": 2, "fase": "invitado", "tema": "demo", "nivel": 1, "pregunta": "¿Cuál de estos es un dispositivo de ENTRADA?", "opciones": ["Teclado", "Impresora", "Parlante", "Monitor"], "correcta": 0, "explicacion": "Un dispositivo de entrada envía información a la computadora. El teclado lo hace cuando escribes."},
-    {"id": 3, "fase": "invitado", "tema": "demo", "nivel": 1, "pregunta": "¿Qué es un sistema operativo?", "opciones": ["Un programa que administra el hardware y permite usar otros programas", "Un juego muy grande", "Una página de internet", "Un tipo de memoria"], "correcta": 0, "explicacion": "Windows, Android y iOS son sistemas operativos: son el 'jefe' que coordina todo en el dispositivo."},
-    {"id": 4, "fase": "invitado", "tema": "demo", "nivel": 1, "pregunta": "¿Cuál de estos es un lenguaje de programación?", "opciones": ["Chrome", "Windows", "Python", "Google"], "correcta": 2, "explicacion": "Python es un lenguaje para escribir instrucciones que la computadora entiende. Los otros son empresas o programas."},
-    {"id": 5, "fase": "invitado", "tema": "demo", "nivel": 1, "pregunta": "¿Cuántos bits tiene un byte?", "opciones": ["16", "32", "4", "8"], "correcta": 3, "explicacion": "Un byte son 8 bits. Un bit es la unidad más pequeña: un 0 o un 1."},
-    {"id": 6, "fase": "invitado", "tema": "demo", "nivel": 1, "pregunta": "¿Para qué sirve una variable en programación?", "opciones": ["Para dibujar en pantalla", "Para apagar el programa", "Para guardar un dato con un nombre", "Para conectarse a internet"], "correcta": 2, "explicacion": "Una variable es como una cajita con etiqueta: guarda un dato para usarlo después."},
-    {"id": 7, "fase": "invitado", "tema": "demo", "nivel": 1, "pregunta": "¿Qué extensión tiene normalmente un archivo de Python?", "opciones": [".txt", ".exe", ".py", ".java"], "correcta": 2, "explicacion": "Los archivos de Python terminan en .py, por ejemplo main.py."},
-    {"id": 8, "fase": "invitado", "tema": "demo", "nivel": 1, "pregunta": "En programación, ¿qué es un 'bug'?", "opciones": ["Un error en el programa", "Un cable especial", "Un tipo de teclado", "Una red social"], "correcta": 0, "explicacion": "Un bug es un error que hace que el programa se comporte mal. Buscarlos y arreglarlos se llama 'depurar'."},
-    {"id": 9, "fase": "escuela", "tema": "general", "nivel": 1, "pregunta": "¿Qué parte de la computadora te deja ver imágenes y videos?", "opciones": ["El teclado", "El monitor", "El mouse", "El parlante"], "correcta": 1, "explicacion": "El monitor es la pantalla: ahí vemos lo que hace la computadora."},
-    {"id": 10, "fase": "escuela", "tema": "general", "nivel": 1, "pregunta": "¿Con qué parte escribes letras y números?", "opciones": ["La cámara", "La impresora", "El teclado", "La pantalla"], "correcta": 2, "explicacion": "El teclado tiene teclas con letras y números para escribir."},
-    {"id": 11, "fase": "escuela", "tema": "general", "nivel": 1, "pregunta": "¿Qué usas para mover la flechita en la pantalla?", "opciones": ["El monitor", "El mouse", "El parlante", "El micrófono"], "correcta": 1, "explicacion": "El mouse (ratón) mueve la flechita y te deja hacer clic."},
-    {"id": 12, "fase": "escuela", "tema": "general", "nivel": 1, "pregunta": "¿Qué parte sirve para escuchar música?", "opciones": ["La impresora", "El mouse", "Los parlantes", "El teclado"], "correcta": 2, "explicacion": "Los parlantes sacan el sonido: música, voces y videos."},
-    {"id": 13, "fase": "escuela", "tema": "general", "nivel": 1, "pregunta": "¿Qué máquina pasa un dibujo de la computadora al papel?", "opciones": ["La impresora", "El teclado", "El mouse", "El parlante"], "correcta": 0, "explicacion": "La impresora toma lo que hay en la pantalla y lo pone en una hoja."},
-    {"id": 14, "fase": "escuela", "tema": "general", "nivel": 2, "pregunta": "¿Qué es un programa o una app?", "opciones": ["Una pantalla gigante", "Una parte que se puede tocar", "Un cable muy largo", "Órdenes que le dicen a la computadora qué hacer"], "correcta": 3, "explicacion": "Los programas son instrucciones. No se pueden tocar, por eso se llaman software."},
-    {"id": 15, "fase": "escuela", "tema": "general", "nivel": 2, "pregunta": "¿Cuál de estos es software?", "opciones": ["El monitor", "El teclado", "El mouse", "Un juego de celular"], "correcta": 3, "explicacion": "Un juego es un programa. El mouse, el teclado y el monitor sí se pueden tocar."},
-    {"id": 16, "fase": "escuela", "tema": "general", "nivel": 2, "pregunta": "¿Para qué sirve un navegador como Chrome?", "opciones": ["Para visitar páginas de internet", "Para imprimir", "Para cargar la batería", "Para subir el volumen"], "correcta": 0, "explicacion": "El navegador es la puerta para entrar a las páginas de internet."},
-    {"id": 17, "fase": "escuela", "tema": "general", "nivel": 2, "pregunta": "¿Qué programa usas para escribir una carta?", "opciones": ["Un procesador de texto", "Una calculadora", "Un reproductor de video", "Un juego"], "correcta": 0, "explicacion": "En un procesador de texto, como Word, escribes y das formato a tus textos."},
-    {"id": 18, "fase": "escuela", "tema": "general", "nivel": 2, "pregunta": "¿Qué hace un antivirus?", "opciones": ["Pinta dibujos", "Hace más grande la pantalla", "Sube el volumen", "Cuida la computadora de programas dañinos"], "correcta": 3, "explicacion": "El antivirus es como un guardián: busca programas malos y los detiene."},
-    {"id": 19, "fase": "escuela", "tema": "general", "nivel": 3, "pregunta": "¿Qué es el hardware?", "opciones": ["Las contraseñas", "Los juegos de internet", "Las partes de la computadora que puedes tocar", "Los programas"], "correcta": 2, "explicacion": "Hardware es todo lo que puedes tocar: pantalla, teclado, mouse..."},
-    {"id": 20, "fase": "escuela", "tema": "general", "nivel": 3, "pregunta": "¿Qué es el software?", "opciones": ["La pantalla", "Los programas que no se pueden tocar", "Los cables", "El teclado"], "correcta": 1, "explicacion": "Software son los programas y las apps. Viven dentro de la computadora."},
-    {"id": 21, "fase": "escuela", "tema": "general", "nivel": 3, "pregunta": "Una tablet tiene hardware y software. ¿Cuál es el software?", "opciones": ["La pantalla táctil", "La batería", "Una app de dibujo", "El cargador"], "correcta": 2, "explicacion": "La app es un programa (software). Lo demás se puede tocar (hardware)."},
-    {"id": 22, "fase": "escuela", "tema": "general", "nivel": 3, "pregunta": "¿Cuál es el 'cerebro' de la computadora?", "opciones": ["El procesador (CPU)", "El mouse", "El parlante", "El cable"], "correcta": 0, "explicacion": "El procesador piensa y hace las cuentas que la computadora necesita."},
-    {"id": 23, "fase": "escuela", "tema": "general", "nivel": 3, "pregunta": "¿Dónde se guardan tus fotos y juegos en la computadora?", "opciones": ["En el disco (almacenamiento)", "En el teclado", "En el mouse", "En el parlante"], "correcta": 0, "explicacion": "El disco guarda tus archivos aunque apagues la computadora."},
-    {"id": 24, "fase": "colegio", "tema": "general", "nivel": 1, "pregunta": "¿Qué componente se considera el 'cerebro' del computador?", "opciones": ["La CPU (procesador)", "La memoria RAM", "El disco duro", "La fuente de poder"], "correcta": 0, "explicacion": "La CPU ejecuta las instrucciones de los programas."},
-    {"id": 25, "fase": "colegio", "tema": "general", "nivel": 1, "pregunta": "¿Para qué sirve la memoria RAM?", "opciones": ["Enfriar el procesador", "Guardar temporalmente los datos de lo que se está usando", "Guardar archivos para siempre", "Conectarse a internet"], "correcta": 1, "explicacion": "La RAM es rápida pero temporal: al apagar el equipo se vacía."},
-    {"id": 26, "fase": "colegio", "tema": "general", "nivel": 1, "pregunta": "¿Cuál de estos es un dispositivo de almacenamiento?", "opciones": ["Un parlante", "Un SSD", "Una webcam", "Una tarjeta de red"], "correcta": 1, "explicacion": "Un SSD (o un disco duro) guarda archivos de forma permanente."},
-    {"id": 27, "fase": "colegio", "tema": "general", "nivel": 1, "pregunta": "¿Cuál de estos dispositivos es de entrada y de salida a la vez?", "opciones": ["El monitor común", "El teclado", "La impresora", "La pantalla táctil"], "correcta": 3, "explicacion": "Muestra imágenes (salida) y recibe tus toques (entrada)."},
-    {"id": 28, "fase": "colegio", "tema": "general", "nivel": 1, "pregunta": "¿Qué componente conecta entre sí a todos los demás?", "opciones": ["El ventilador", "La placa madre (motherboard)", "La fuente de poder", "La tarjeta de sonido"], "correcta": 1, "explicacion": "La placa madre tiene los circuitos y conectores que unen CPU, RAM, discos y más."},
-    {"id": 29, "fase": "colegio", "tema": "general", "nivel": 2, "pregunta": "¿Cuál es la función principal de un sistema operativo?", "opciones": ["Administrar los recursos del equipo y permitir usar programas", "Navegar por internet", "Solo proteger de virus", "Crear documentos"], "correcta": 0, "explicacion": "El sistema operativo coordina hardware y programas. Ejemplos: Windows, Linux, Android."},
-    {"id": 30, "fase": "colegio", "tema": "general", "nivel": 2, "pregunta": "¿Cuál de estos es un sistema operativo?", "opciones": ["Linux", "Excel", "Chrome", "Photoshop"], "correcta": 0, "explicacion": "Linux es un sistema operativo. Excel, Chrome y Photoshop son aplicaciones que corren sobre uno."},
-    {"id": 31, "fase": "colegio", "tema": "general", "nivel": 2, "pregunta": "¿Qué tipo de software es Microsoft Word?", "opciones": ["Un sistema operativo", "Una aplicación de ofimática", "Un controlador", "Un componente de hardware"], "correcta": 1, "explicacion": "La ofimática agrupa programas de oficina: texto, hojas de cálculo y presentaciones."},
-    {"id": 32, "fase": "colegio", "tema": "general", "nivel": 2, "pregunta": "¿Qué es un archivo con extensión .docx?", "opciones": ["Un documento de Word", "Un programa instalable", "Una imagen", "Un video"], "correcta": 0, "explicacion": "La extensión (lo que va después del punto) indica el tipo de archivo."},
-    {"id": 33, "fase": "colegio", "tema": "general", "nivel": 2, "pregunta": "¿Para qué sirve actualizar el software?", "opciones": ["Para apagar el equipo", "Para borrar tus archivos", "Solo para cambiar los colores", "Para corregir errores y mejorar la seguridad"], "correcta": 3, "explicacion": "Las actualizaciones arreglan fallos y cierran huecos de seguridad."},
-    {"id": 34, "fase": "colegio", "tema": "general", "nivel": 3, "pregunta": "¿Qué es un algoritmo?", "opciones": ["Un cable de red", "Un tipo de virus", "Una lista ordenada de pasos para resolver un problema", "Un tipo de computadora"], "correcta": 2, "explicacion": "Una receta de cocina es un algoritmo: pasos en orden para lograr un resultado."},
-    {"id": 35, "fase": "colegio", "tema": "general", "nivel": 3, "pregunta": "¿Qué guarda una variable?", "opciones": ["Una pantalla", "Solo imágenes", "Un dato con un nombre, que puede cambiar", "Un teclado"], "correcta": 2, "explicacion": "Es como una caja con etiqueta: dentro hay un dato que puedes usar o cambiar."},
-    {"id": 36, "fase": "colegio", "tema": "general", "nivel": 3, "pregunta": "¿Qué hace este código de Python? print('Hola')", "opciones": ["Suma dos números", "Muestra la palabra Hola", "Borra la pantalla", "Cierra el programa"], "correcta": 1, "explicacion": "print() muestra en pantalla lo que va entre paréntesis."},
-    {"id": 37, "fase": "colegio", "tema": "general", "nivel": 3, "pregunta": "¿Qué estructura repite instrucciones varias veces?", "opciones": ["Un bucle (for o while)", "Una imagen", "Una variable", "Un comentario"], "correcta": 0, "explicacion": "Los bucles evitan escribir lo mismo muchas veces."},
-    {"id": 38, "fase": "colegio", "tema": "general", "nivel": 3, "pregunta": "¿Qué estructura permite tomar decisiones en un programa?", "opciones": ["input", "if / else (condicional)", "import", "print"], "correcta": 1, "explicacion": "if revisa una condición: si es verdadera hace una cosa; si no, hace otra (else)."},
-    {"id": 39, "fase": "universidad", "tema": "programacion", "nivel": 1, "pregunta": "¿Qué diferencia hay entre un compilador y un intérprete?", "opciones": ["El intérprete solo sirve para bases de datos", "Son exactamente lo mismo", "El compilador solo funciona en celulares", "El compilador traduce todo el programa antes de ejecutarlo; el intérprete lo traduce mientras se ejecuta"], "correcta": 3, "explicacion": "C se suele compilar y Python se suele interpretar, aunque en la práctica hay mezclas."},
-    {"id": 40, "fase": "universidad", "tema": "programacion", "nivel": 1, "pregunta": "En Python, ¿cuál es el resultado de 7 // 2?", "opciones": ["3.5", "2", "4", "3"], "correcta": 3, "explicacion": "El operador // es la división entera: descarta los decimales."},
-    {"id": 41, "fase": "universidad", "tema": "programacion", "nivel": 1, "pregunta": "¿Qué estructura de Python es ordenada, modificable y se escribe con corchetes []?", "opciones": ["La tupla", "El conjunto (set)", "La lista", "El diccionario"], "correcta": 2, "explicacion": "Las listas guardan elementos en orden y se pueden cambiar. Las tuplas usan paréntesis y no se modifican."},
-    {"id": 42, "fase": "universidad", "tema": "programacion", "nivel": 1, "pregunta": "¿Qué es un bucle infinito?", "opciones": ["Un ciclo cuya condición de salida nunca se cumple", "Un ciclo que se ejecuta una sola vez", "Un tipo de variable", "Un error de red"], "correcta": 0, "explicacion": "Si la condición del while nunca pasa a falsa, el programa se queda repitiendo sin parar."},
-    {"id": 43, "fase": "universidad", "tema": "programacion", "nivel": 2, "pregunta": "¿Qué es la programación orientada a objetos (POO)?", "opciones": ["Un lenguaje específico", "Una forma de cifrar datos", "Un paradigma que organiza el código en objetos con datos y comportamientos", "Programar solo con imágenes"], "correcta": 2, "explicacion": "Una clase describe cómo es un objeto (atributos) y qué puede hacer (métodos)."},
-    {"id": 44, "fase": "universidad", "tema": "programacion", "nivel": 2, "pregunta": "¿Qué es la recursividad?", "opciones": ["Un bucle for", "Una función que se llama a sí misma", "Un error de memoria", "Una variable global"], "correcta": 1, "explicacion": "Necesita un caso base para detenerse; si no, nunca termina."},
-    {"id": 45, "fase": "universidad", "tema": "programacion", "nivel": 2, "pregunta": "¿Qué complejidad tiene buscar un elemento en una lista desordenada de n elementos, en el peor caso?", "opciones": ["O(log n)", "O(n)", "O(n²)", "O(1)"], "correcta": 1, "explicacion": "En el peor caso hay que revisar los n elementos uno por uno."},
-    {"id": 46, "fase": "universidad", "tema": "programacion", "nivel": 2, "pregunta": "¿Para qué sirve Git?", "opciones": ["Para crear redes Wi-Fi", "Para comprimir imágenes", "Para controlar las versiones del código y colaborar", "Para diseñar bases de datos"], "correcta": 2, "explicacion": "Git guarda el historial de cambios y permite trabajar en equipo sin pisarse el trabajo."},
-    {"id": 47, "fase": "universidad", "tema": "redes", "nivel": 1, "pregunta": "¿Qué es una dirección IP?", "opciones": ["Una contraseña de Wi-Fi", "Un tipo de cable", "Un identificador numérico de un dispositivo en una red", "El nombre de un sitio web"], "correcta": 2, "explicacion": "Es como la dirección de una casa: permite que los datos lleguen al dispositivo correcto."},
-    {"id": 48, "fase": "universidad", "tema": "redes", "nivel": 1, "pregunta": "¿Qué hace el DNS?", "opciones": ["Aumenta la velocidad del internet", "Traduce nombres de dominio a direcciones IP", "Cifra el Wi-Fi", "Guarda correos electrónicos"], "correcta": 1, "explicacion": "Tú escribes un nombre fácil de recordar y el DNS busca la IP donde está ese sitio."},
-    {"id": 49, "fase": "universidad", "tema": "redes", "nivel": 1, "pregunta": "¿Qué protocolo indica una conexión web cifrada (el candado del navegador)?", "opciones": ["FTP", "HTTPS", "SMTP", "HTTP"], "correcta": 1, "explicacion": "HTTPS cifra la comunicación entre tu navegador y el sitio."},
-    {"id": 50, "fase": "universidad", "tema": "redes", "nivel": 1, "pregunta": "¿Qué dispositivo conecta tu red local con internet?", "opciones": ["La webcam", "El teclado", "El monitor", "El router"], "correcta": 3, "explicacion": "El router envía el tráfico de tu red hacia internet y de vuelta, y suele repartir las IP de tu red local."},
-    {"id": 51, "fase": "universidad", "tema": "redes", "nivel": 2, "pregunta": "¿Cuál es la diferencia entre TCP y UDP?", "opciones": ["No hay ninguna diferencia", "TCP solo sirve para video", "UDP es siempre más seguro que TCP", "TCP garantiza la entrega ordenada de los datos; UDP es más rápido pero sin garantías"], "correcta": 3, "explicacion": "TCP se usa en la web y el correo; UDP en llamadas, juegos y streaming, donde importa la velocidad."},
-    {"id": 52, "fase": "universidad", "tema": "redes", "nivel": 2, "pregunta": "¿Cuántas capas tiene el modelo OSI?", "opciones": ["5", "4", "9", "7"], "correcta": 3, "explicacion": "Física, enlace, red, transporte, sesión, presentación y aplicación."},
-    {"id": 53, "fase": "universidad", "tema": "redes", "nivel": 2, "pregunta": "¿Qué es una VPN?", "opciones": ["Una conexión cifrada que envía tu tráfico por un túnel seguro", "Un tipo de router", "Un virus", "Una red social"], "correcta": 0, "explicacion": "Protege tu tráfico en redes poco confiables y puede ocultar tu IP real al sitio que visitas."},
-    {"id": 54, "fase": "universidad", "tema": "redes", "nivel": 2, "pregunta": "¿Qué es la computación en la nube?", "opciones": ["Un tipo de antivirus", "Usar servidores remotos por internet para almacenar y procesar datos", "Guardar archivos solo en un USB", "Un monitor muy grande"], "correcta": 1, "explicacion": "En vez de usar solo tu equipo, usas recursos de centros de datos de otras empresas."},
-    {"id": 55, "fase": "universidad", "tema": "bases_datos", "nivel": 1, "pregunta": "¿Qué es una clave primaria?", "opciones": ["El primer registro de la tabla", "Un campo que identifica de forma única cada registro", "La contraseña de la base de datos", "Un tipo de gráfico"], "correcta": 1, "explicacion": "Por ejemplo, el id de un usuario: no se repite y no puede estar vacío."},
-    {"id": 56, "fase": "universidad", "tema": "bases_datos", "nivel": 1, "pregunta": "¿Qué comando SQL se usa para consultar datos?", "opciones": ["DROP", "SELECT", "DELETE", "INSERT"], "correcta": 1, "explicacion": "SELECT lee datos. INSERT agrega, DELETE borra filas y DROP elimina tablas."},
-    {"id": 57, "fase": "universidad", "tema": "bases_datos", "nivel": 1, "pregunta": "¿Cuál de estos es un sistema de bases de datos relacional?", "opciones": ["MySQL", "Un archivo PDF", "Un video", "Un chat"], "correcta": 0, "explicacion": "Las bases relacionales guardan datos en tablas relacionadas. SQLite, MySQL y PostgreSQL lo son."},
-    {"id": 58, "fase": "universidad", "tema": "bases_datos", "nivel": 1, "pregunta": "¿Qué hace la cláusula WHERE en SQL?", "opciones": ["Ordena los resultados", "Filtra los registros que cumplen una condición", "Borra la tabla", "Crea una base de datos"], "correcta": 1, "explicacion": "Ej.: SELECT * FROM jugadores WHERE puntos > 100 trae solo a quienes tienen más de 100 puntos."},
-    {"id": 59, "fase": "universidad", "tema": "bases_datos", "nivel": 2, "pregunta": "¿Para qué sirve un JOIN en SQL?", "opciones": ["Copiar toda la base de datos", "Eliminar duplicados", "Cifrar una tabla", "Combinar filas de dos o más tablas relacionadas"], "correcta": 3, "explicacion": "Permite consultar datos de varias tablas, por ejemplo usuarios y sus puntajes."},
-    {"id": 60, "fase": "universidad", "tema": "bases_datos", "nivel": 2, "pregunta": "¿Qué es la normalización?", "opciones": ["Hacer más lenta la base", "Cifrar los datos", "Convertir los datos a Excel", "Organizar las tablas para reducir datos repetidos e inconsistencias"], "correcta": 3, "explicacion": "Evita guardar el mismo dato en muchos lugares, lo que facilita mantenerlo correcto."},
-    {"id": 61, "fase": "universidad", "tema": "bases_datos", "nivel": 2, "pregunta": "¿Qué significan las siglas ACID en las transacciones?", "opciones": ["Acceso, Control, Índice y Datos", "Ninguna de las anteriores", "Almacén, Consulta, Información y Diseño", "Atomicidad, Consistencia, Aislamiento y Durabilidad"], "correcta": 3, "explicacion": "Son las garantías que hacen confiables las transacciones, por ejemplo una transferencia bancaria."},
-    {"id": 62, "fase": "universidad", "tema": "bases_datos", "nivel": 2, "pregunta": "¿Qué es una inyección SQL?", "opciones": ["Un tipo de índice", "Un ataque que mete comandos SQL maliciosos en campos de entrada", "Una forma de copiar tablas", "Un tipo de gráfico"], "correcta": 1, "explicacion": "Se evita usando consultas con parámetros (los signos ?) y validando lo que escribe el usuario. Esta app lo hace."},
-    {"id": 63, "fase": "universidad", "tema": "seguridad", "nivel": 1, "pregunta": "¿Qué es el phishing?", "opciones": ["Un tipo de antivirus", "Un engaño para robar datos haciéndose pasar por una entidad confiable", "Una red social", "Un juego en línea"], "correcta": 1, "explicacion": "Desconfía de enlaces o mensajes urgentes que piden contraseñas o datos."},
-    {"id": 64, "fase": "universidad", "tema": "seguridad", "nivel": 1, "pregunta": "¿Cuál de estas contraseñas es la más segura?", "opciones": ["micumpleaños", "Tr3n-Azul-Luna-47!", "password", "12345678"], "correcta": 1, "explicacion": "Mejor larga, con letras, números y símbolos, y que no sea un dato personal."},
-    {"id": 65, "fase": "universidad", "tema": "seguridad", "nivel": 1, "pregunta": "¿Qué es la autenticación de dos factores (2FA)?", "opciones": ["Cambiar la contraseña cada día", "Tener dos cuentas", "Pedir una segunda prueba de identidad además de la contraseña", "Usar la misma contraseña dos veces"], "correcta": 2, "explicacion": "Por ejemplo, un código en tu celular: aunque roben tu contraseña, falta el segundo paso."},
-    {"id": 66, "fase": "universidad", "tema": "seguridad", "nivel": 1, "pregunta": "¿Qué es el malware?", "opciones": ["Software malicioso diseñado para dañar o robar información", "Un tipo de monitor", "Un programa de oficina", "Una red Wi-Fi"], "correcta": 0, "explicacion": "Incluye virus, troyanos, ransomware y spyware."},
-    {"id": 67, "fase": "universidad", "tema": "seguridad", "nivel": 2, "pregunta": "¿Qué diferencia hay entre cifrar y hacer un hash?", "opciones": ["El hash se revierte con una clave", "Son lo mismo", "El cifrado se puede revertir con la clave; el hash no se puede revertir", "El cifrado no usa claves"], "correcta": 2, "explicacion": "Por eso las contraseñas se guardan con hash. Así lo hace CodeQuiz."},
-    {"id": 68, "fase": "universidad", "tema": "seguridad", "nivel": 2, "pregunta": "¿Qué es un ataque de fuerza bruta?", "opciones": ["Instalar un antivirus", "Enviar correos falsos", "Probar muchas combinaciones de contraseñas hasta acertar", "Romper un teclado"], "correcta": 2, "explicacion": "Por eso se limitan los intentos fallidos, como hace CodeQuiz."},
-    {"id": 69, "fase": "universidad", "tema": "seguridad", "nivel": 2, "pregunta": "¿Qué hace un firewall?", "opciones": ["Filtra el tráfico de red permitiendo o bloqueando conexiones según reglas", "Cifra todo el disco", "Sube archivos a la nube", "Acelera el internet"], "correcta": 0, "explicacion": "Es como un guardia en la puerta de la red: revisa qué entra y qué sale."},
-    {"id": 70, "fase": "universidad", "tema": "seguridad", "nivel": 2, "pregunta": "¿Qué es la ingeniería social?", "opciones": ["Manipular a las personas para que entreguen información o acceso", "Diseñar apps", "Construir redes sociales", "Programar en grupo"], "correcta": 0, "explicacion": "Ataca al eslabón humano en lugar de la máquina. El phishing es un ejemplo."},
-    {"id": 71, "fase": "universidad", "tema": "ia", "nivel": 1, "pregunta": "¿Qué es el aprendizaje automático (machine learning)?", "opciones": ["Un tipo de robot físico", "Programar sin usar datos", "Que un sistema aprenda patrones a partir de datos en lugar de seguir solo reglas fijas", "Un videojuego"], "correcta": 2, "explicacion": "En vez de escribir todas las reglas a mano, se le muestran ejemplos y el sistema las deduce."},
-    {"id": 72, "fase": "universidad", "tema": "ia", "nivel": 1, "pregunta": "¿Qué es un modelo de lenguaje, como los chatbots?", "opciones": ["Un editor de fotos", "Un sistema entrenado con grandes cantidades de texto para generar lenguaje", "Un diccionario impreso", "Un cable especial"], "correcta": 1, "explicacion": "Aprende patrones del texto y los usa para responder. Puede equivocarse, así que hay que verificar."},
-    {"id": 73, "fase": "universidad", "tema": "ia", "nivel": 1, "pregunta": "Un sistema recibe fotos de gatos y perros ya etiquetadas para aprender a distinguirlos. ¿Qué tipo de aprendizaje es?", "opciones": ["No supervisado", "Ninguno de los anteriores", "Supervisado", "Por refuerzo"], "correcta": 2, "explicacion": "Es supervisado porque los ejemplos vienen con la respuesta correcta (la etiqueta)."},
-    {"id": 74, "fase": "universidad", "tema": "ia", "nivel": 1, "pregunta": "¿Qué son los 'datos de entrenamiento'?", "opciones": ["Un tipo de cable", "El monitor donde se ve", "Los ejemplos con los que se enseña a un modelo", "Las contraseñas del sistema"], "correcta": 2, "explicacion": "La calidad de estos datos influye mucho en la calidad del modelo."},
-    {"id": 75, "fase": "universidad", "tema": "ia", "nivel": 2, "pregunta": "¿Qué es el sobreajuste (overfitting)?", "opciones": ["Cuando el modelo memoriza los datos de entrenamiento y falla con datos nuevos", "Cuando el modelo es muy rápido", "Cuando tiene pocos datos de prueba", "Cuando usa mucha electricidad"], "correcta": 0, "explicacion": "Es como estudiar de memoria las respuestas de un examen y no entender el tema."},
-    {"id": 76, "fase": "universidad", "tema": "ia", "nivel": 2, "pregunta": "¿Qué es una red neuronal artificial?", "opciones": ["Una red Wi-Fi inteligente", "Un modelo formado por capas de nodos conectados, inspirado libremente en el cerebro", "Un chip de memoria", "Un navegador"], "correcta": 1, "explicacion": "Cada nodo hace un cálculo pequeño; juntos aprenden patrones complejos."},
-    {"id": 77, "fase": "universidad", "tema": "ia", "nivel": 2, "pregunta": "¿Por qué es importante revisar los sesgos (bias) en los datos?", "opciones": ["Porque no afectan los resultados", "Porque mejoran el hardware", "Porque hacen el modelo más barato", "Porque el modelo puede aprender y repetir prejuicios presentes en los datos"], "correcta": 3, "explicacion": "Si los datos son injustos, el modelo puede tomar decisiones injustas."},
-    {"id": 78, "fase": "universidad", "tema": "ia", "nivel": 2, "pregunta": "¿Qué es una 'alucinación' en un modelo de lenguaje?", "opciones": ["Un fallo de pantalla", "Una respuesta que suena convincente pero es falsa o inventada", "Un tipo de entrenamiento", "Un virus informático"], "correcta": 1, "explicacion": "Por eso conviene contrastar con fuentes confiables lo que responde una IA."},
-    {"id": 79, "fase": "universidad", "tema": "hardware", "nivel": 1, "pregunta": "¿Qué diferencia principal hay entre la RAM y el almacenamiento (SSD)?", "opciones": ["El SSD pierde los datos al apagar", "Son lo mismo", "La RAM guarda archivos para siempre", "La RAM es temporal y rápida; el SSD guarda datos de forma permanente"], "correcta": 3, "explicacion": "La RAM guarda lo que estás usando ahora; el SSD guarda tus archivos a largo plazo."},
-    {"id": 80, "fase": "universidad", "tema": "hardware", "nivel": 1, "pregunta": "¿Qué hace la GPU?", "opciones": ["Procesa gráficos y muchos cálculos en paralelo", "Suministra energía", "Conecta a Wi-Fi", "Almacena archivos"], "correcta": 0, "explicacion": "Por eso también se usa para entrenar modelos de inteligencia artificial."},
-    {"id": 81, "fase": "universidad", "tema": "hardware", "nivel": 1, "pregunta": "¿Qué mide la frecuencia de un procesador en GHz?", "opciones": ["El tamaño de la pantalla", "Cuántos ciclos de reloj realiza por segundo", "La capacidad de la batería", "La memoria total"], "correcta": 1, "explicacion": "1 GHz son mil millones de ciclos por segundo. Más GHz ayuda, pero no es lo único que importa."},
-    {"id": 82, "fase": "universidad", "tema": "hardware", "nivel": 1, "pregunta": "¿Cuál es una ventaja principal de un SSD sobre un HDD?", "opciones": ["Siempre es más grande", "Hace más ruido", "Usa discos giratorios", "Es más rápido y no tiene partes móviles"], "correcta": 3, "explicacion": "Al no tener piezas que giran, es más veloz, silencioso y resistente a golpes."},
-    {"id": 83, "fase": "universidad", "tema": "hardware", "nivel": 2, "pregunta": "¿Qué significa que un procesador sea de 64 bits?", "opciones": ["Tiene 64 núcleos", "Pesa 64 gramos", "Maneja datos y direcciones de memoria de 64 bits, lo que permite usar mucha más RAM", "Usa 64 cables"], "correcta": 2, "explicacion": "Un sistema de 32 bits solo puede usar unos 4 GB de RAM; el de 64 bits, muchísimos más."},
-    {"id": 84, "fase": "universidad", "tema": "hardware", "nivel": 2, "pregunta": "¿Qué es un núcleo (core) en un procesador?", "opciones": ["La fuente de poder", "Un tipo de memoria USB", "La carcasa del computador", "Una unidad que ejecuta instrucciones de forma independiente"], "correcta": 3, "explicacion": "Más núcleos permiten hacer varias tareas a la vez."},
-    {"id": 85, "fase": "universidad", "tema": "hardware", "nivel": 2, "pregunta": "¿Para qué sirve la memoria caché?", "opciones": ["Enfriar el equipo", "Guardar fotos y videos", "Conectarse a internet", "Guardar datos muy usados cerca del procesador para acelerar el acceso"], "correcta": 3, "explicacion": "Es una memoria pequeñita y muy rápida que evita ir a buscar datos a la RAM tantas veces."},
-    {"id": 86, "fase": "universidad", "tema": "hardware", "nivel": 2, "pregunta": "¿Qué es un RAID 1?", "opciones": ["Dividir los datos entre discos sin copia", "Duplicar los datos en dos discos (espejo) para tolerar el fallo de uno", "Un cable de red", "Un tipo de virus"], "correcta": 1, "explicacion": "Si un disco falla, el otro tiene una copia exacta de todo."}
+    {
+      "id": 1,
+      "fase": "invitado",
+      "tema": "demo",
+      "nivel": 1,
+      "pregunta": "¿Qué significan las siglas CPU?",
+      "opciones": [
+        "Control Principal de Usuario",
+        "Centro de Programas Universales",
+        "Computadora Personal Unida",
+        "Unidad Central de Procesamiento"
+      ],
+      "correcta": 3,
+      "explicacion": "La CPU es el 'cerebro' de la computadora: ejecuta las instrucciones de los programas."
+    },
+    {
+      "id": 2,
+      "fase": "invitado",
+      "tema": "demo",
+      "nivel": 1,
+      "pregunta": "¿Cuál de estos es un dispositivo de ENTRADA?",
+      "opciones": [
+        "Teclado",
+        "Impresora",
+        "Parlante",
+        "Monitor"
+      ],
+      "correcta": 0,
+      "explicacion": "Un dispositivo de entrada envía información a la computadora. El teclado lo hace cuando escribes."
+    },
+    {
+      "id": 3,
+      "fase": "invitado",
+      "tema": "demo",
+      "nivel": 1,
+      "pregunta": "¿Qué es un sistema operativo?",
+      "opciones": [
+        "Un programa que administra el hardware y permite usar otros programas",
+        "Un juego muy grande",
+        "Una página de internet",
+        "Un tipo de memoria"
+      ],
+      "correcta": 0,
+      "explicacion": "Windows, Android y iOS son sistemas operativos: son el 'jefe' que coordina todo en el dispositivo."
+    },
+    {
+      "id": 4,
+      "fase": "invitado",
+      "tema": "demo",
+      "nivel": 1,
+      "pregunta": "¿Cuál de estos es un lenguaje de programación?",
+      "opciones": [
+        "Chrome",
+        "Windows",
+        "Python",
+        "Google"
+      ],
+      "correcta": 2,
+      "explicacion": "Python es un lenguaje para escribir instrucciones que la computadora entiende. Los otros son empresas o programas."
+    },
+    {
+      "id": 5,
+      "fase": "invitado",
+      "tema": "demo",
+      "nivel": 1,
+      "pregunta": "¿Cuántos bits tiene un byte?",
+      "opciones": [
+        "16",
+        "32",
+        "4",
+        "8"
+      ],
+      "correcta": 3,
+      "explicacion": "Un byte son 8 bits. Un bit es la unidad más pequeña: un 0 o un 1."
+    },
+    {
+      "id": 6,
+      "fase": "invitado",
+      "tema": "demo",
+      "nivel": 1,
+      "pregunta": "¿Para qué sirve una variable en programación?",
+      "opciones": [
+        "Para dibujar en pantalla",
+        "Para apagar el programa",
+        "Para guardar un dato con un nombre",
+        "Para conectarse a internet"
+      ],
+      "correcta": 2,
+      "explicacion": "Una variable es como una cajita con etiqueta: guarda un dato para usarlo después."
+    },
+    {
+      "id": 7,
+      "fase": "invitado",
+      "tema": "demo",
+      "nivel": 1,
+      "pregunta": "¿Qué extensión tiene normalmente un archivo de Python?",
+      "opciones": [
+        ".txt",
+        ".exe",
+        ".py",
+        ".java"
+      ],
+      "correcta": 2,
+      "explicacion": "Los archivos de Python terminan en .py, por ejemplo main.py."
+    },
+    {
+      "id": 8,
+      "fase": "invitado",
+      "tema": "demo",
+      "nivel": 1,
+      "pregunta": "En programación, ¿qué es un 'bug'?",
+      "opciones": [
+        "Un error en el programa",
+        "Un cable especial",
+        "Un tipo de teclado",
+        "Una red social"
+      ],
+      "correcta": 0,
+      "explicacion": "Un bug es un error que hace que el programa se comporte mal. Buscarlos y arreglarlos se llama 'depurar'."
+    },
+    {
+      "id": 9,
+      "fase": "escuela",
+      "tema": "general",
+      "nivel": 1,
+      "pregunta": "¿Qué parte de la computadora te deja ver imágenes y videos?",
+      "opciones": [
+        "El teclado",
+        "El monitor",
+        "El mouse",
+        "El parlante"
+      ],
+      "correcta": 1,
+      "explicacion": "El monitor es la pantalla: ahí vemos lo que hace la computadora."
+    },
+    {
+      "id": 10,
+      "fase": "escuela",
+      "tema": "general",
+      "nivel": 1,
+      "pregunta": "¿Con qué parte escribes letras y números?",
+      "opciones": [
+        "La cámara",
+        "La impresora",
+        "El teclado",
+        "La pantalla"
+      ],
+      "correcta": 2,
+      "explicacion": "El teclado tiene teclas con letras y números para escribir."
+    },
+    {
+      "id": 11,
+      "fase": "escuela",
+      "tema": "general",
+      "nivel": 1,
+      "pregunta": "¿Qué usas para mover la flechita en la pantalla?",
+      "opciones": [
+        "El monitor",
+        "El mouse",
+        "El parlante",
+        "El micrófono"
+      ],
+      "correcta": 1,
+      "explicacion": "El mouse (ratón) mueve la flechita y te deja hacer clic."
+    },
+    {
+      "id": 12,
+      "fase": "escuela",
+      "tema": "general",
+      "nivel": 1,
+      "pregunta": "¿Qué parte sirve para escuchar música?",
+      "opciones": [
+        "La impresora",
+        "El mouse",
+        "Los parlantes",
+        "El teclado"
+      ],
+      "correcta": 2,
+      "explicacion": "Los parlantes sacan el sonido: música, voces y videos."
+    },
+    {
+      "id": 13,
+      "fase": "escuela",
+      "tema": "general",
+      "nivel": 1,
+      "pregunta": "¿Qué máquina pasa un dibujo de la computadora al papel?",
+      "opciones": [
+        "La impresora",
+        "El teclado",
+        "El mouse",
+        "El parlante"
+      ],
+      "correcta": 0,
+      "explicacion": "La impresora toma lo que hay en la pantalla y lo pone en una hoja."
+    },
+    {
+      "id": 14,
+      "fase": "escuela",
+      "tema": "general",
+      "nivel": 2,
+      "pregunta": "¿Qué es un programa o una app?",
+      "opciones": [
+        "Una pantalla gigante",
+        "Una parte que se puede tocar",
+        "Un cable muy largo",
+        "Órdenes que le dicen a la computadora qué hacer"
+      ],
+      "correcta": 3,
+      "explicacion": "Los programas son instrucciones. No se pueden tocar, por eso se llaman software."
+    },
+    {
+      "id": 15,
+      "fase": "escuela",
+      "tema": "general",
+      "nivel": 2,
+      "pregunta": "¿Cuál de estos es software?",
+      "opciones": [
+        "El monitor",
+        "El teclado",
+        "El mouse",
+        "Un juego de celular"
+      ],
+      "correcta": 3,
+      "explicacion": "Un juego es un programa. El mouse, el teclado y el monitor sí se pueden tocar."
+    },
+    {
+      "id": 16,
+      "fase": "escuela",
+      "tema": "general",
+      "nivel": 2,
+      "pregunta": "¿Para qué sirve un navegador como Chrome?",
+      "opciones": [
+        "Para visitar páginas de internet",
+        "Para imprimir",
+        "Para cargar la batería",
+        "Para subir el volumen"
+      ],
+      "correcta": 0,
+      "explicacion": "El navegador es la puerta para entrar a las páginas de internet."
+    },
+    {
+      "id": 17,
+      "fase": "escuela",
+      "tema": "general",
+      "nivel": 2,
+      "pregunta": "¿Qué programa usas para escribir una carta?",
+      "opciones": [
+        "Un procesador de texto",
+        "Una calculadora",
+        "Un reproductor de video",
+        "Un juego"
+      ],
+      "correcta": 0,
+      "explicacion": "En un procesador de texto, como Word, escribes y das formato a tus textos."
+    },
+    {
+      "id": 18,
+      "fase": "escuela",
+      "tema": "general",
+      "nivel": 2,
+      "pregunta": "¿Qué hace un antivirus?",
+      "opciones": [
+        "Pinta dibujos",
+        "Hace más grande la pantalla",
+        "Sube el volumen",
+        "Cuida la computadora de programas dañinos"
+      ],
+      "correcta": 3,
+      "explicacion": "El antivirus es como un guardián: busca programas malos y los detiene."
+    },
+    {
+      "id": 19,
+      "fase": "escuela",
+      "tema": "general",
+      "nivel": 3,
+      "pregunta": "¿Qué es el hardware?",
+      "opciones": [
+        "Las contraseñas",
+        "Los juegos de internet",
+        "Las partes de la computadora que puedes tocar",
+        "Los programas"
+      ],
+      "correcta": 2,
+      "explicacion": "Hardware es todo lo que puedes tocar: pantalla, teclado, mouse..."
+    },
+    {
+      "id": 20,
+      "fase": "escuela",
+      "tema": "general",
+      "nivel": 3,
+      "pregunta": "¿Qué es el software?",
+      "opciones": [
+        "La pantalla",
+        "Los programas que no se pueden tocar",
+        "Los cables",
+        "El teclado"
+      ],
+      "correcta": 1,
+      "explicacion": "Software son los programas y las apps. Viven dentro de la computadora."
+    },
+    {
+      "id": 21,
+      "fase": "escuela",
+      "tema": "general",
+      "nivel": 3,
+      "pregunta": "Una tablet tiene hardware y software. ¿Cuál es el software?",
+      "opciones": [
+        "La pantalla táctil",
+        "La batería",
+        "Una app de dibujo",
+        "El cargador"
+      ],
+      "correcta": 2,
+      "explicacion": "La app es un programa (software). Lo demás se puede tocar (hardware)."
+    },
+    {
+      "id": 22,
+      "fase": "escuela",
+      "tema": "general",
+      "nivel": 3,
+      "pregunta": "¿Cuál es el 'cerebro' de la computadora?",
+      "opciones": [
+        "El procesador (CPU)",
+        "El mouse",
+        "El parlante",
+        "El cable"
+      ],
+      "correcta": 0,
+      "explicacion": "El procesador piensa y hace las cuentas que la computadora necesita."
+    },
+    {
+      "id": 23,
+      "fase": "escuela",
+      "tema": "general",
+      "nivel": 3,
+      "pregunta": "¿Dónde se guardan tus fotos y juegos en la computadora?",
+      "opciones": [
+        "En el disco (almacenamiento)",
+        "En el teclado",
+        "En el mouse",
+        "En el parlante"
+      ],
+      "correcta": 0,
+      "explicacion": "El disco guarda tus archivos aunque apagues la computadora."
+    },
+    {
+      "id": 24,
+      "fase": "colegio",
+      "tema": "general",
+      "nivel": 1,
+      "pregunta": "¿Qué componente se considera el 'cerebro' del computador?",
+      "opciones": [
+        "La CPU (procesador)",
+        "La memoria RAM",
+        "El disco duro",
+        "La fuente de poder"
+      ],
+      "correcta": 0,
+      "explicacion": "La CPU ejecuta las instrucciones de los programas."
+    },
+    {
+      "id": 25,
+      "fase": "colegio",
+      "tema": "general",
+      "nivel": 1,
+      "pregunta": "¿Para qué sirve la memoria RAM?",
+      "opciones": [
+        "Enfriar el procesador",
+        "Guardar temporalmente los datos de lo que se está usando",
+        "Guardar archivos para siempre",
+        "Conectarse a internet"
+      ],
+      "correcta": 1,
+      "explicacion": "La RAM es rápida pero temporal: al apagar el equipo se vacía."
+    },
+    {
+      "id": 26,
+      "fase": "colegio",
+      "tema": "general",
+      "nivel": 1,
+      "pregunta": "¿Cuál de estos es un dispositivo de almacenamiento?",
+      "opciones": [
+        "Un parlante",
+        "Un SSD",
+        "Una webcam",
+        "Una tarjeta de red"
+      ],
+      "correcta": 1,
+      "explicacion": "Un SSD (o un disco duro) guarda archivos de forma permanente."
+    },
+    {
+      "id": 27,
+      "fase": "colegio",
+      "tema": "general",
+      "nivel": 1,
+      "pregunta": "¿Cuál de estos dispositivos es de entrada y de salida a la vez?",
+      "opciones": [
+        "El monitor común",
+        "El teclado",
+        "La impresora",
+        "La pantalla táctil"
+      ],
+      "correcta": 3,
+      "explicacion": "Muestra imágenes (salida) y recibe tus toques (entrada)."
+    },
+    {
+      "id": 28,
+      "fase": "colegio",
+      "tema": "general",
+      "nivel": 1,
+      "pregunta": "¿Qué componente conecta entre sí a todos los demás?",
+      "opciones": [
+        "El ventilador",
+        "La placa madre (motherboard)",
+        "La fuente de poder",
+        "La tarjeta de sonido"
+      ],
+      "correcta": 1,
+      "explicacion": "La placa madre tiene los circuitos y conectores que unen CPU, RAM, discos y más."
+    },
+    {
+      "id": 29,
+      "fase": "colegio",
+      "tema": "general",
+      "nivel": 2,
+      "pregunta": "¿Cuál es la función principal de un sistema operativo?",
+      "opciones": [
+        "Administrar los recursos del equipo y permitir usar programas",
+        "Navegar por internet",
+        "Solo proteger de virus",
+        "Crear documentos"
+      ],
+      "correcta": 0,
+      "explicacion": "El sistema operativo coordina hardware y programas. Ejemplos: Windows, Linux, Android."
+    },
+    {
+      "id": 30,
+      "fase": "colegio",
+      "tema": "general",
+      "nivel": 2,
+      "pregunta": "¿Cuál de estos es un sistema operativo?",
+      "opciones": [
+        "Linux",
+        "Excel",
+        "Chrome",
+        "Photoshop"
+      ],
+      "correcta": 0,
+      "explicacion": "Linux es un sistema operativo. Excel, Chrome y Photoshop son aplicaciones que corren sobre uno."
+    },
+    {
+      "id": 31,
+      "fase": "colegio",
+      "tema": "general",
+      "nivel": 2,
+      "pregunta": "¿Qué tipo de software es Microsoft Word?",
+      "opciones": [
+        "Un sistema operativo",
+        "Una aplicación de ofimática",
+        "Un controlador",
+        "Un componente de hardware"
+      ],
+      "correcta": 1,
+      "explicacion": "La ofimática agrupa programas de oficina: texto, hojas de cálculo y presentaciones."
+    },
+    {
+      "id": 32,
+      "fase": "colegio",
+      "tema": "general",
+      "nivel": 2,
+      "pregunta": "¿Qué es un archivo con extensión .docx?",
+      "opciones": [
+        "Un documento de Word",
+        "Un programa instalable",
+        "Una imagen",
+        "Un video"
+      ],
+      "correcta": 0,
+      "explicacion": "La extensión (lo que va después del punto) indica el tipo de archivo."
+    },
+    {
+      "id": 33,
+      "fase": "colegio",
+      "tema": "general",
+      "nivel": 2,
+      "pregunta": "¿Para qué sirve actualizar el software?",
+      "opciones": [
+        "Para apagar el equipo",
+        "Para borrar tus archivos",
+        "Solo para cambiar los colores",
+        "Para corregir errores y mejorar la seguridad"
+      ],
+      "correcta": 3,
+      "explicacion": "Las actualizaciones arreglan fallos y cierran huecos de seguridad."
+    },
+    {
+      "id": 34,
+      "fase": "colegio",
+      "tema": "general",
+      "nivel": 3,
+      "pregunta": "¿Qué es un algoritmo?",
+      "opciones": [
+        "Un cable de red",
+        "Un tipo de virus",
+        "Una lista ordenada de pasos para resolver un problema",
+        "Un tipo de computadora"
+      ],
+      "correcta": 2,
+      "explicacion": "Una receta de cocina es un algoritmo: pasos en orden para lograr un resultado."
+    },
+    {
+      "id": 35,
+      "fase": "colegio",
+      "tema": "general",
+      "nivel": 3,
+      "pregunta": "¿Qué guarda una variable?",
+      "opciones": [
+        "Una pantalla",
+        "Solo imágenes",
+        "Un dato con un nombre, que puede cambiar",
+        "Un teclado"
+      ],
+      "correcta": 2,
+      "explicacion": "Es como una caja con etiqueta: dentro hay un dato que puedes usar o cambiar."
+    },
+    {
+      "id": 36,
+      "fase": "colegio",
+      "tema": "general",
+      "nivel": 3,
+      "pregunta": "¿Qué hace este código de Python? print('Hola')",
+      "opciones": [
+        "Suma dos números",
+        "Muestra la palabra Hola",
+        "Borra la pantalla",
+        "Cierra el programa"
+      ],
+      "correcta": 1,
+      "explicacion": "print() muestra en pantalla lo que va entre paréntesis."
+    },
+    {
+      "id": 37,
+      "fase": "colegio",
+      "tema": "general",
+      "nivel": 3,
+      "pregunta": "¿Qué estructura repite instrucciones varias veces?",
+      "opciones": [
+        "Un bucle (for o while)",
+        "Una imagen",
+        "Una variable",
+        "Un comentario"
+      ],
+      "correcta": 0,
+      "explicacion": "Los bucles evitan escribir lo mismo muchas veces."
+    },
+    {
+      "id": 38,
+      "fase": "colegio",
+      "tema": "general",
+      "nivel": 3,
+      "pregunta": "¿Qué estructura permite tomar decisiones en un programa?",
+      "opciones": [
+        "input",
+        "if / else (condicional)",
+        "import",
+        "print"
+      ],
+      "correcta": 1,
+      "explicacion": "if revisa una condición: si es verdadera hace una cosa; si no, hace otra (else)."
+    },
+    {
+      "id": 39,
+      "fase": "universidad",
+      "tema": "programacion",
+      "nivel": 1,
+      "pregunta": "¿Qué diferencia hay entre un compilador y un intérprete?",
+      "opciones": [
+        "El intérprete solo sirve para bases de datos",
+        "Son exactamente lo mismo",
+        "El compilador solo funciona en celulares",
+        "El compilador traduce todo el programa antes de ejecutarlo; el intérprete lo traduce mientras se ejecuta"
+      ],
+      "correcta": 3,
+      "explicacion": "C se suele compilar y Python se suele interpretar, aunque en la práctica hay mezclas."
+    },
+    {
+      "id": 40,
+      "fase": "universidad",
+      "tema": "programacion",
+      "nivel": 1,
+      "pregunta": "En Python, ¿cuál es el resultado de 7 // 2?",
+      "opciones": [
+        "3.5",
+        "2",
+        "4",
+        "3"
+      ],
+      "correcta": 3,
+      "explicacion": "El operador // es la división entera: descarta los decimales."
+    },
+    {
+      "id": 41,
+      "fase": "universidad",
+      "tema": "programacion",
+      "nivel": 1,
+      "pregunta": "¿Qué estructura de Python es ordenada, modificable y se escribe con corchetes []?",
+      "opciones": [
+        "La tupla",
+        "El conjunto (set)",
+        "La lista",
+        "El diccionario"
+      ],
+      "correcta": 2,
+      "explicacion": "Las listas guardan elementos en orden y se pueden cambiar. Las tuplas usan paréntesis y no se modifican."
+    },
+    {
+      "id": 42,
+      "fase": "universidad",
+      "tema": "programacion",
+      "nivel": 1,
+      "pregunta": "¿Qué es un bucle infinito?",
+      "opciones": [
+        "Un ciclo cuya condición de salida nunca se cumple",
+        "Un ciclo que se ejecuta una sola vez",
+        "Un tipo de variable",
+        "Un error de red"
+      ],
+      "correcta": 0,
+      "explicacion": "Si la condición del while nunca pasa a falsa, el programa se queda repitiendo sin parar."
+    },
+    {
+      "id": 43,
+      "fase": "universidad",
+      "tema": "programacion",
+      "nivel": 2,
+      "pregunta": "¿Qué es la programación orientada a objetos (POO)?",
+      "opciones": [
+        "Un lenguaje específico",
+        "Una forma de cifrar datos",
+        "Un paradigma que organiza el código en objetos con datos y comportamientos",
+        "Programar solo con imágenes"
+      ],
+      "correcta": 2,
+      "explicacion": "Una clase describe cómo es un objeto (atributos) y qué puede hacer (métodos)."
+    },
+    {
+      "id": 44,
+      "fase": "universidad",
+      "tema": "programacion",
+      "nivel": 2,
+      "pregunta": "¿Qué es la recursividad?",
+      "opciones": [
+        "Un bucle for",
+        "Una función que se llama a sí misma",
+        "Un error de memoria",
+        "Una variable global"
+      ],
+      "correcta": 1,
+      "explicacion": "Necesita un caso base para detenerse; si no, nunca termina."
+    },
+    {
+      "id": 45,
+      "fase": "universidad",
+      "tema": "programacion",
+      "nivel": 2,
+      "pregunta": "¿Qué complejidad tiene buscar un elemento en una lista desordenada de n elementos, en el peor caso?",
+      "opciones": [
+        "O(log n)",
+        "O(n)",
+        "O(n²)",
+        "O(1)"
+      ],
+      "correcta": 1,
+      "explicacion": "En el peor caso hay que revisar los n elementos uno por uno."
+    },
+    {
+      "id": 46,
+      "fase": "universidad",
+      "tema": "programacion",
+      "nivel": 2,
+      "pregunta": "¿Para qué sirve Git?",
+      "opciones": [
+        "Para crear redes Wi-Fi",
+        "Para comprimir imágenes",
+        "Para controlar las versiones del código y colaborar",
+        "Para diseñar bases de datos"
+      ],
+      "correcta": 2,
+      "explicacion": "Git guarda el historial de cambios y permite trabajar en equipo sin pisarse el trabajo."
+    },
+    {
+      "id": 47,
+      "fase": "universidad",
+      "tema": "redes",
+      "nivel": 1,
+      "pregunta": "¿Qué es una dirección IP?",
+      "opciones": [
+        "Una contraseña de Wi-Fi",
+        "Un tipo de cable",
+        "Un identificador numérico de un dispositivo en una red",
+        "El nombre de un sitio web"
+      ],
+      "correcta": 2,
+      "explicacion": "Es como la dirección de una casa: permite que los datos lleguen al dispositivo correcto."
+    },
+    {
+      "id": 48,
+      "fase": "universidad",
+      "tema": "redes",
+      "nivel": 1,
+      "pregunta": "¿Qué hace el DNS?",
+      "opciones": [
+        "Aumenta la velocidad del internet",
+        "Traduce nombres de dominio a direcciones IP",
+        "Cifra el Wi-Fi",
+        "Guarda correos electrónicos"
+      ],
+      "correcta": 1,
+      "explicacion": "Tú escribes un nombre fácil de recordar y el DNS busca la IP donde está ese sitio."
+    },
+    {
+      "id": 49,
+      "fase": "universidad",
+      "tema": "redes",
+      "nivel": 1,
+      "pregunta": "¿Qué protocolo indica una conexión web cifrada (el candado del navegador)?",
+      "opciones": [
+        "FTP",
+        "HTTPS",
+        "SMTP",
+        "HTTP"
+      ],
+      "correcta": 1,
+      "explicacion": "HTTPS cifra la comunicación entre tu navegador y el sitio."
+    },
+    {
+      "id": 50,
+      "fase": "universidad",
+      "tema": "redes",
+      "nivel": 1,
+      "pregunta": "¿Qué dispositivo conecta tu red local con internet?",
+      "opciones": [
+        "La webcam",
+        "El teclado",
+        "El monitor",
+        "El router"
+      ],
+      "correcta": 3,
+      "explicacion": "El router envía el tráfico de tu red hacia internet y de vuelta, y suele repartir las IP de tu red local."
+    },
+    {
+      "id": 51,
+      "fase": "universidad",
+      "tema": "redes",
+      "nivel": 2,
+      "pregunta": "¿Cuál es la diferencia entre TCP y UDP?",
+      "opciones": [
+        "No hay ninguna diferencia",
+        "TCP solo sirve para video",
+        "UDP es siempre más seguro que TCP",
+        "TCP garantiza la entrega ordenada de los datos; UDP es más rápido pero sin garantías"
+      ],
+      "correcta": 3,
+      "explicacion": "TCP se usa en la web y el correo; UDP en llamadas, juegos y streaming, donde importa la velocidad."
+    },
+    {
+      "id": 52,
+      "fase": "universidad",
+      "tema": "redes",
+      "nivel": 2,
+      "pregunta": "¿Cuántas capas tiene el modelo OSI?",
+      "opciones": [
+        "5",
+        "4",
+        "9",
+        "7"
+      ],
+      "correcta": 3,
+      "explicacion": "Física, enlace, red, transporte, sesión, presentación y aplicación."
+    },
+    {
+      "id": 53,
+      "fase": "universidad",
+      "tema": "redes",
+      "nivel": 2,
+      "pregunta": "¿Qué es una VPN?",
+      "opciones": [
+        "Una conexión cifrada que envía tu tráfico por un túnel seguro",
+        "Un tipo de router",
+        "Un virus",
+        "Una red social"
+      ],
+      "correcta": 0,
+      "explicacion": "Protege tu tráfico en redes poco confiables y puede ocultar tu IP real al sitio que visitas."
+    },
+    {
+      "id": 54,
+      "fase": "universidad",
+      "tema": "redes",
+      "nivel": 2,
+      "pregunta": "¿Qué es la computación en la nube?",
+      "opciones": [
+        "Un tipo de antivirus",
+        "Usar servidores remotos por internet para almacenar y procesar datos",
+        "Guardar archivos solo en un USB",
+        "Un monitor muy grande"
+      ],
+      "correcta": 1,
+      "explicacion": "En vez de usar solo tu equipo, usas recursos de centros de datos de otras empresas."
+    },
+    {
+      "id": 55,
+      "fase": "universidad",
+      "tema": "bases_datos",
+      "nivel": 1,
+      "pregunta": "¿Qué es una clave primaria?",
+      "opciones": [
+        "El primer registro de la tabla",
+        "Un campo que identifica de forma única cada registro",
+        "La contraseña de la base de datos",
+        "Un tipo de gráfico"
+      ],
+      "correcta": 1,
+      "explicacion": "Por ejemplo, el id de un usuario: no se repite y no puede estar vacío."
+    },
+    {
+      "id": 56,
+      "fase": "universidad",
+      "tema": "bases_datos",
+      "nivel": 1,
+      "pregunta": "¿Qué comando SQL se usa para consultar datos?",
+      "opciones": [
+        "DROP",
+        "SELECT",
+        "DELETE",
+        "INSERT"
+      ],
+      "correcta": 1,
+      "explicacion": "SELECT lee datos. INSERT agrega, DELETE borra filas y DROP elimina tablas."
+    },
+    {
+      "id": 57,
+      "fase": "universidad",
+      "tema": "bases_datos",
+      "nivel": 1,
+      "pregunta": "¿Cuál de estos es un sistema de bases de datos relacional?",
+      "opciones": [
+        "MySQL",
+        "Un archivo PDF",
+        "Un video",
+        "Un chat"
+      ],
+      "correcta": 0,
+      "explicacion": "Las bases relacionales guardan datos en tablas relacionadas. SQLite, MySQL y PostgreSQL lo son."
+    },
+    {
+      "id": 58,
+      "fase": "universidad",
+      "tema": "bases_datos",
+      "nivel": 1,
+      "pregunta": "¿Qué hace la cláusula WHERE en SQL?",
+      "opciones": [
+        "Ordena los resultados",
+        "Filtra los registros que cumplen una condición",
+        "Borra la tabla",
+        "Crea una base de datos"
+      ],
+      "correcta": 1,
+      "explicacion": "Ej.: SELECT * FROM jugadores WHERE puntos > 100 trae solo a quienes tienen más de 100 puntos."
+    },
+    {
+      "id": 59,
+      "fase": "universidad",
+      "tema": "bases_datos",
+      "nivel": 2,
+      "pregunta": "¿Para qué sirve un JOIN en SQL?",
+      "opciones": [
+        "Copiar toda la base de datos",
+        "Eliminar duplicados",
+        "Cifrar una tabla",
+        "Combinar filas de dos o más tablas relacionadas"
+      ],
+      "correcta": 3,
+      "explicacion": "Permite consultar datos de varias tablas, por ejemplo usuarios y sus puntajes."
+    },
+    {
+      "id": 60,
+      "fase": "universidad",
+      "tema": "bases_datos",
+      "nivel": 2,
+      "pregunta": "¿Qué es la normalización?",
+      "opciones": [
+        "Hacer más lenta la base",
+        "Cifrar los datos",
+        "Convertir los datos a Excel",
+        "Organizar las tablas para reducir datos repetidos e inconsistencias"
+      ],
+      "correcta": 3,
+      "explicacion": "Evita guardar el mismo dato en muchos lugares, lo que facilita mantenerlo correcto."
+    },
+    {
+      "id": 61,
+      "fase": "universidad",
+      "tema": "bases_datos",
+      "nivel": 2,
+      "pregunta": "¿Qué significan las siglas ACID en las transacciones?",
+      "opciones": [
+        "Acceso, Control, Índice y Datos",
+        "Ninguna de las anteriores",
+        "Almacén, Consulta, Información y Diseño",
+        "Atomicidad, Consistencia, Aislamiento y Durabilidad"
+      ],
+      "correcta": 3,
+      "explicacion": "Son las garantías que hacen confiables las transacciones, por ejemplo una transferencia bancaria."
+    },
+    {
+      "id": 62,
+      "fase": "universidad",
+      "tema": "bases_datos",
+      "nivel": 2,
+      "pregunta": "¿Qué es una inyección SQL?",
+      "opciones": [
+        "Un tipo de índice",
+        "Un ataque que mete comandos SQL maliciosos en campos de entrada",
+        "Una forma de copiar tablas",
+        "Un tipo de gráfico"
+      ],
+      "correcta": 1,
+      "explicacion": "Se evita usando consultas con parámetros (los signos ?) y validando lo que escribe el usuario. Esta app lo hace."
+    },
+    {
+      "id": 63,
+      "fase": "universidad",
+      "tema": "seguridad",
+      "nivel": 1,
+      "pregunta": "¿Qué es el phishing?",
+      "opciones": [
+        "Un tipo de antivirus",
+        "Un engaño para robar datos haciéndose pasar por una entidad confiable",
+        "Una red social",
+        "Un juego en línea"
+      ],
+      "correcta": 1,
+      "explicacion": "Desconfía de enlaces o mensajes urgentes que piden contraseñas o datos."
+    },
+    {
+      "id": 64,
+      "fase": "universidad",
+      "tema": "seguridad",
+      "nivel": 1,
+      "pregunta": "¿Cuál de estas contraseñas es la más segura?",
+      "opciones": [
+        "micumpleaños",
+        "Tr3n-Azul-Luna-47!",
+        "password",
+        "12345678"
+      ],
+      "correcta": 1,
+      "explicacion": "Mejor larga, con letras, números y símbolos, y que no sea un dato personal."
+    },
+    {
+      "id": 65,
+      "fase": "universidad",
+      "tema": "seguridad",
+      "nivel": 1,
+      "pregunta": "¿Qué es la autenticación de dos factores (2FA)?",
+      "opciones": [
+        "Cambiar la contraseña cada día",
+        "Tener dos cuentas",
+        "Pedir una segunda prueba de identidad además de la contraseña",
+        "Usar la misma contraseña dos veces"
+      ],
+      "correcta": 2,
+      "explicacion": "Por ejemplo, un código en tu celular: aunque roben tu contraseña, falta el segundo paso."
+    },
+    {
+      "id": 66,
+      "fase": "universidad",
+      "tema": "seguridad",
+      "nivel": 1,
+      "pregunta": "¿Qué es el malware?",
+      "opciones": [
+        "Software malicioso diseñado para dañar o robar información",
+        "Un tipo de monitor",
+        "Un programa de oficina",
+        "Una red Wi-Fi"
+      ],
+      "correcta": 0,
+      "explicacion": "Incluye virus, troyanos, ransomware y spyware."
+    },
+    {
+      "id": 67,
+      "fase": "universidad",
+      "tema": "seguridad",
+      "nivel": 2,
+      "pregunta": "¿Qué diferencia hay entre cifrar y hacer un hash?",
+      "opciones": [
+        "El hash se revierte con una clave",
+        "Son lo mismo",
+        "El cifrado se puede revertir con la clave; el hash no se puede revertir",
+        "El cifrado no usa claves"
+      ],
+      "correcta": 2,
+      "explicacion": "Por eso las contraseñas se guardan con hash. Así lo hace CodeQuiz."
+    },
+    {
+      "id": 68,
+      "fase": "universidad",
+      "tema": "seguridad",
+      "nivel": 2,
+      "pregunta": "¿Qué es un ataque de fuerza bruta?",
+      "opciones": [
+        "Instalar un antivirus",
+        "Enviar correos falsos",
+        "Probar muchas combinaciones de contraseñas hasta acertar",
+        "Romper un teclado"
+      ],
+      "correcta": 2,
+      "explicacion": "Por eso se limitan los intentos fallidos, como hace CodeQuiz."
+    },
+    {
+      "id": 69,
+      "fase": "universidad",
+      "tema": "seguridad",
+      "nivel": 2,
+      "pregunta": "¿Qué hace un firewall?",
+      "opciones": [
+        "Filtra el tráfico de red permitiendo o bloqueando conexiones según reglas",
+        "Cifra todo el disco",
+        "Sube archivos a la nube",
+        "Acelera el internet"
+      ],
+      "correcta": 0,
+      "explicacion": "Es como un guardia en la puerta de la red: revisa qué entra y qué sale."
+    },
+    {
+      "id": 70,
+      "fase": "universidad",
+      "tema": "seguridad",
+      "nivel": 2,
+      "pregunta": "¿Qué es la ingeniería social?",
+      "opciones": [
+        "Manipular a las personas para que entreguen información o acceso",
+        "Diseñar apps",
+        "Construir redes sociales",
+        "Programar en grupo"
+      ],
+      "correcta": 0,
+      "explicacion": "Ataca al eslabón humano en lugar de la máquina. El phishing es un ejemplo."
+    },
+    {
+      "id": 71,
+      "fase": "universidad",
+      "tema": "ia",
+      "nivel": 1,
+      "pregunta": "¿Qué es el aprendizaje automático (machine learning)?",
+      "opciones": [
+        "Un tipo de robot físico",
+        "Programar sin usar datos",
+        "Que un sistema aprenda patrones a partir de datos en lugar de seguir solo reglas fijas",
+        "Un videojuego"
+      ],
+      "correcta": 2,
+      "explicacion": "En vez de escribir todas las reglas a mano, se le muestran ejemplos y el sistema las deduce."
+    },
+    {
+      "id": 72,
+      "fase": "universidad",
+      "tema": "ia",
+      "nivel": 1,
+      "pregunta": "¿Qué es un modelo de lenguaje, como los chatbots?",
+      "opciones": [
+        "Un editor de fotos",
+        "Un sistema entrenado con grandes cantidades de texto para generar lenguaje",
+        "Un diccionario impreso",
+        "Un cable especial"
+      ],
+      "correcta": 1,
+      "explicacion": "Aprende patrones del texto y los usa para responder. Puede equivocarse, así que hay que verificar."
+    },
+    {
+      "id": 73,
+      "fase": "universidad",
+      "tema": "ia",
+      "nivel": 1,
+      "pregunta": "Un sistema recibe fotos de gatos y perros ya etiquetadas para aprender a distinguirlos. ¿Qué tipo de aprendizaje es?",
+      "opciones": [
+        "No supervisado",
+        "Ninguno de los anteriores",
+        "Supervisado",
+        "Por refuerzo"
+      ],
+      "correcta": 2,
+      "explicacion": "Es supervisado porque los ejemplos vienen con la respuesta correcta (la etiqueta)."
+    },
+    {
+      "id": 74,
+      "fase": "universidad",
+      "tema": "ia",
+      "nivel": 1,
+      "pregunta": "¿Qué son los 'datos de entrenamiento'?",
+      "opciones": [
+        "Un tipo de cable",
+        "El monitor donde se ve",
+        "Los ejemplos con los que se enseña a un modelo",
+        "Las contraseñas del sistema"
+      ],
+      "correcta": 2,
+      "explicacion": "La calidad de estos datos influye mucho en la calidad del modelo."
+    },
+    {
+      "id": 75,
+      "fase": "universidad",
+      "tema": "ia",
+      "nivel": 2,
+      "pregunta": "¿Qué es el sobreajuste (overfitting)?",
+      "opciones": [
+        "Cuando el modelo memoriza los datos de entrenamiento y falla con datos nuevos",
+        "Cuando el modelo es muy rápido",
+        "Cuando tiene pocos datos de prueba",
+        "Cuando usa mucha electricidad"
+      ],
+      "correcta": 0,
+      "explicacion": "Es como estudiar de memoria las respuestas de un examen y no entender el tema."
+    },
+    {
+      "id": 76,
+      "fase": "universidad",
+      "tema": "ia",
+      "nivel": 2,
+      "pregunta": "¿Qué es una red neuronal artificial?",
+      "opciones": [
+        "Una red Wi-Fi inteligente",
+        "Un modelo formado por capas de nodos conectados, inspirado libremente en el cerebro",
+        "Un chip de memoria",
+        "Un navegador"
+      ],
+      "correcta": 1,
+      "explicacion": "Cada nodo hace un cálculo pequeño; juntos aprenden patrones complejos."
+    },
+    {
+      "id": 77,
+      "fase": "universidad",
+      "tema": "ia",
+      "nivel": 2,
+      "pregunta": "¿Por qué es importante revisar los sesgos (bias) en los datos?",
+      "opciones": [
+        "Porque no afectan los resultados",
+        "Porque mejoran el hardware",
+        "Porque hacen el modelo más barato",
+        "Porque el modelo puede aprender y repetir prejuicios presentes en los datos"
+      ],
+      "correcta": 3,
+      "explicacion": "Si los datos son injustos, el modelo puede tomar decisiones injustas."
+    },
+    {
+      "id": 78,
+      "fase": "universidad",
+      "tema": "ia",
+      "nivel": 2,
+      "pregunta": "¿Qué es una 'alucinación' en un modelo de lenguaje?",
+      "opciones": [
+        "Un fallo de pantalla",
+        "Una respuesta que suena convincente pero es falsa o inventada",
+        "Un tipo de entrenamiento",
+        "Un virus informático"
+      ],
+      "correcta": 1,
+      "explicacion": "Por eso conviene contrastar con fuentes confiables lo que responde una IA."
+    },
+    {
+      "id": 79,
+      "fase": "universidad",
+      "tema": "hardware",
+      "nivel": 1,
+      "pregunta": "¿Qué diferencia principal hay entre la RAM y el almacenamiento (SSD)?",
+      "opciones": [
+        "El SSD pierde los datos al apagar",
+        "Son lo mismo",
+        "La RAM guarda archivos para siempre",
+        "La RAM es temporal y rápida; el SSD guarda datos de forma permanente"
+      ],
+      "correcta": 3,
+      "explicacion": "La RAM guarda lo que estás usando ahora; el SSD guarda tus archivos a largo plazo."
+    },
+    {
+      "id": 80,
+      "fase": "universidad",
+      "tema": "hardware",
+      "nivel": 1,
+      "pregunta": "¿Qué hace la GPU?",
+      "opciones": [
+        "Procesa gráficos y muchos cálculos en paralelo",
+        "Suministra energía",
+        "Conecta a Wi-Fi",
+        "Almacena archivos"
+      ],
+      "correcta": 0,
+      "explicacion": "Por eso también se usa para entrenar modelos de inteligencia artificial."
+    },
+    {
+      "id": 81,
+      "fase": "universidad",
+      "tema": "hardware",
+      "nivel": 1,
+      "pregunta": "¿Qué mide la frecuencia de un procesador en GHz?",
+      "opciones": [
+        "El tamaño de la pantalla",
+        "Cuántos ciclos de reloj realiza por segundo",
+        "La capacidad de la batería",
+        "La memoria total"
+      ],
+      "correcta": 1,
+      "explicacion": "1 GHz son mil millones de ciclos por segundo. Más GHz ayuda, pero no es lo único que importa."
+    },
+    {
+      "id": 82,
+      "fase": "universidad",
+      "tema": "hardware",
+      "nivel": 1,
+      "pregunta": "¿Cuál es una ventaja principal de un SSD sobre un HDD?",
+      "opciones": [
+        "Siempre es más grande",
+        "Hace más ruido",
+        "Usa discos giratorios",
+        "Es más rápido y no tiene partes móviles"
+      ],
+      "correcta": 3,
+      "explicacion": "Al no tener piezas que giran, es más veloz, silencioso y resistente a golpes."
+    },
+    {
+      "id": 83,
+      "fase": "universidad",
+      "tema": "hardware",
+      "nivel": 2,
+      "pregunta": "¿Qué significa que un procesador sea de 64 bits?",
+      "opciones": [
+        "Tiene 64 núcleos",
+        "Pesa 64 gramos",
+        "Maneja datos y direcciones de memoria de 64 bits, lo que permite usar mucha más RAM",
+        "Usa 64 cables"
+      ],
+      "correcta": 2,
+      "explicacion": "Un sistema de 32 bits solo puede usar unos 4 GB de RAM; el de 64 bits, muchísimos más."
+    },
+    {
+      "id": 84,
+      "fase": "universidad",
+      "tema": "hardware",
+      "nivel": 2,
+      "pregunta": "¿Qué es un núcleo (core) en un procesador?",
+      "opciones": [
+        "La fuente de poder",
+        "Un tipo de memoria USB",
+        "La carcasa del computador",
+        "Una unidad que ejecuta instrucciones de forma independiente"
+      ],
+      "correcta": 3,
+      "explicacion": "Más núcleos permiten hacer varias tareas a la vez."
+    },
+    {
+      "id": 85,
+      "fase": "universidad",
+      "tema": "hardware",
+      "nivel": 2,
+      "pregunta": "¿Para qué sirve la memoria caché?",
+      "opciones": [
+        "Enfriar el equipo",
+        "Guardar fotos y videos",
+        "Conectarse a internet",
+        "Guardar datos muy usados cerca del procesador para acelerar el acceso"
+      ],
+      "correcta": 3,
+      "explicacion": "Es una memoria pequeñita y muy rápida que evita ir a buscar datos a la RAM tantas veces."
+    },
+    {
+      "id": 86,
+      "fase": "universidad",
+      "tema": "hardware",
+      "nivel": 2,
+      "pregunta": "¿Qué es un RAID 1?",
+      "opciones": [
+        "Dividir los datos entre discos sin copia",
+        "Duplicar los datos en dos discos (espejo) para tolerar el fallo de uno",
+        "Un cable de red",
+        "Un tipo de virus"
+      ],
+      "correcta": 1,
+      "explicacion": "Si un disco falla, el otro tiene una copia exacta de todo."
+    }
   ]
 }
